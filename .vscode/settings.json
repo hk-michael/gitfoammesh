@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "09_01_simple.C": "cpp",
+        "dimensionSet.C": "cpp",
+        "cpuTime.C": "cpp",
+        "*.tcc": "cpp",
+        "ostream": "cpp",
+        "IOobject.C": "cpp",
+        "fvmLaplacian.C": "cpp",
+        "random": "cpp"
+    }
+}

@@ -1,0 +1,13 @@
+
+cd "${0%/*}" || exit 1                              # Run from this directory
+#------------------------------------------------------------------------------
+
+appPath=$(cd `dirname $0`; pwd)                     # Get application path
+appName="${appPath##*/}"                            # Get application name
+
+blockMesh -case debug_case | tee debug_case/log.mesh
+echo "Meshing done."
+
+$appName -case debug_case | tee debug_case/log.run
+
+

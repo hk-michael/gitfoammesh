@@ -1,0 +1,9 @@
+Making dependency list for source file 09_01_simple.C
+g++ -std=c++14 -m64 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -I/home/michael/OpenFOAM/OpenFOAM-10/src/finiteVolume/lnInclude -I/home/michael/OpenFOAM/OpenFOAM-10/src/meshTools/lnInclude -IlnInclude -I. -I/home/michael/OpenFOAM/OpenFOAM-10/src/OpenFOAM/lnInclude -I/home/michael/OpenFOAM/OpenFOAM-10/src/OSspecific/POSIX/lnInclude   -fPIC -c 09_01_simple.C -o Make/linux64GccDPInt32Opt/09_01_simple.o
+In file included from 09_01_simple.C:54:
+pEqn.H: In function ‘int main(int, char**)’:
+pEqn.H:6:28: error: ‘AH’ was not declared in this scope; did you mean ‘H’?
+    6 | volVectorField HbyA = rA * AH;
+      |                            ^~
+      |                            H
+make: *** [/home/michael/OpenFOAM/OpenFOAM-10/wmake/rules/General/transform:26: Make/linux64GccDPInt32Opt/09_01_simple.o] Error 1

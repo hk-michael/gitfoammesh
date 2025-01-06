@@ -1,0 +1,13 @@
+
+cd "${0%/*}" || exit 1                              # Run from this directory
+#------------------------------------------------------------------------------
+
+appPath=$(cd `dirname $0`; pwd)
+appName="${casePath##*/}"
+
+cd debug_case
+
+rm -rf log.*
+foamCleanTutorials
+echo "Cleaning Done."
+
